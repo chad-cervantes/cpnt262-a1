@@ -16,3 +16,13 @@ function applyToggleTransition(inputQuery) {
 menuIcon.addEventListener("click", () => {
   gridContainer.classList.toggle("menu-row");
 });
+
+//First toggle transition check
+applyToggleTransition(mobileMediaQuery);
+
+//click of #header to close
+document.addEventListener("click", (e) => {
+  if (!(e.target === sightHeader || siteHeader.contains(e.target))) {
+    document.querySelector("grid-container").classList.remove("menu-row");
+  }
+});
