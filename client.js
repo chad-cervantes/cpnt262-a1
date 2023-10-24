@@ -11,3 +11,8 @@ function applyToggleTransition(inputQuery) {
     gridContainer.classList.remove("menu-row");
   }
 }
+
+//Event Listener
+menuIcon.addEventListener("click", () => {
+  gridContainer.classList.toggle("menu-row");
+});
