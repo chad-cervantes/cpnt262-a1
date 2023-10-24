@@ -10,6 +10,8 @@
 
 - [Tailwind CSS](https://tailwindcss.com/)
 
+- [FontAwesome](https://fontawesome.com/)
+
 Gallery CSS Images for cards
 - [Gyuto knife image](https://www.chefslocker.co.uk/store/p87/WASakai.html)
 - [Santoku knife image](https://www.justonecookbook.com/your-guide-to-japanese-knives/)
