@@ -1,1 +1,37 @@
+/*styling nav toggle*/
 
+#grid-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 600ms ease;
+}
+
+#grid-container > ul {
+  overflow: hidden;
+  list-style-type: none;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#grid-container.menu-row {
+  grid-template-rows: 1fr;
+}
+
+@media only screen and (min-width: 700px) {
+  #site-header {
+    align-items: center;
+  }
+  #grid-container {
+    grid-template-rows: 1fr;
+  }
+  #grid-container > ul {
+    flex-direction: row;
+    align-items: center;
+  }
+  #menu-icon {
+    display: none;
+  }
+}
