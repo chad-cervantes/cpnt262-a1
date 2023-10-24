@@ -26,3 +26,12 @@ document.addEventListener("click", (e) => {
     document.querySelector("grid-container").classList.remove("menu-row");
   }
 });
+
+// function menuToggle() {
+//   let x = document.getElementById("primary-nav-links");
+//    if (x.style.display === "block") {
+//     x.style.display = "none";
+//    } else {
+//     x.style.display = "block";
+//    }
+// }

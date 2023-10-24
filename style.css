@@ -1,6 +1,6 @@
 /*styling nav toggle*/
 
-#grid-container {
+#grid-container {  
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 600ms ease;
@@ -34,4 +34,4 @@
   #menu-icon {
     display: none;
   }
-}
+} 
