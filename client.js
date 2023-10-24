@@ -22,16 +22,7 @@ applyToggleTransition(mobileMediaQuery);
 
 //click of #header to close
 document.addEventListener("click", (e) => {
-  if (!(e.target === sightHeader || siteHeader.contains(e.target))) {
+  if (!(e.target === siteHeader || siteHeader.contains(e.target))) {
     document.querySelector("grid-container").classList.remove("menu-row");
   }
 });
-
-// function menuToggle() {
-//   let x = document.getElementById("primary-nav-links");
-//    if (x.style.display === "block") {
-//     x.style.display = "none";
-//    } else {
-//     x.style.display = "block";
-//    }
-// }
