@@ -26,3 +26,11 @@ document.addEventListener("click", (e) => {
     document.querySelector("grid-container").classList.remove("menu-row");
   }
 });
+
+//Render a card/image gallery
+
+//Make arrays for image/card gallery
+const knifeTitleArray  = ["Bunka", "Gyuto", "Santoku", "Petty", "Usaba", "Nakiri", "Deba", "Yanagiba", "Garasuki", "Sujihiki", "Kiritsuke", "Burja"] 
+
+const knifeDescriptionArray = ["Like a Santoku knife, but a little longer", "Main chef's kitchen knife", "Knife for vegetables, meats, & fish", "Paring knife", "Like a nakiri knife, but smaller", "Thin rectangular vegetable knife", "Heavy knife for bigger tasks", "Cuts thin slices of fish & large cuts of meat", "Designed to slice boneless meat", "Designed to slice fish, vegetables, & fruit", "Prosciutto knife"]
+
