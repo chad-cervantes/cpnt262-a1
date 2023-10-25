@@ -27,16 +27,40 @@ document.addEventListener("click", (e) => {
   }
 });
 
-
 //Render a card/image gallery
 
 //Make objects for image/card gallery
 const bunkaKnife  = 
-{name: "Bunka", price: "$100", description: "Like a Santoku knife, but a little longer"}
+{
+ name: "Bunka", 
+ description: "Like a Santoku knife, but a little longer",
+ price: "$100",
+ getImage() {
+  return `<img src="assets/images/bunka-knife.png" alt="${this.name} knife" />`;
+  }
+};
 
-const gyutoKnife = {name: "Gyuto", price: "$100", description: "Main chef's kitchen knife"}
+const gyutoKnife = 
+{name: "Gyuto",
+description: "Main chef's kitchen knife", price: "$100",
+getImage() {
+  return `<img src="assets/images/gyuto-knife.png" alt="${this.name} knife" />`;
+  }
+};
 
-const santokuKnife = {name: "Santoku", price: "$100", description: "Knife for vegetables, meats, & fish"}
+const santokuKnife = 
+{name: "Santoku",
+description: "Knife for vegetables, meats, & fish", 
+price: "$100",
+getImage() {
+  return `<img src="assets/images/santoku-knife.png" alt="${this.name} knife" />`;
+  }
+};
+
+const knives = [bunkaKnife, gyutoKnife, santokuKnife]
+
+//Add functions
+
 
 // ["Bunka", "Gyuto", "Santoku", "Petty", "Usaba", "Nakiri", "Deba", "Yanagiba", "Garasuki", "Sujihiki", "Kiritsuke", "Burja"] 
 
