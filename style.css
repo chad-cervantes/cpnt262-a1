@@ -53,16 +53,16 @@
 .cards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 
-  margin: 7px;
+  margin: 5px;
   align-items: center;
 
   
   width: 20vw;
   height: 40vh;
 
-  border: 7px solid black;
+  border: 7px solid white;
 
   box-shadow: 0 0 30px gray;
   transition: 400ms all;
@@ -73,7 +73,7 @@
 }
 
 .card-content {
-  padding: auto;
+  padding: 10px 5px;
 
   width: 100%;
 
@@ -85,5 +85,5 @@
 }
 
 .cards:hover{
-  background-color: purple;
+  transform: scale(1.2);
 }
