@@ -36,3 +36,54 @@
   }
 } 
 
+/*MAKING CARD GALLERY*/
+
+.card-container {
+  margin: auto;
+
+  width: 70%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+  padding-top: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 7px;
+  align-items: center;
+
+  
+  width: 20vw;
+  height: 40vh;
+
+  border: 7px solid black;
+
+  box-shadow: 0 0 30px gray;
+  transition: 400ms all;
+
+  background-size: cover;
+  background-position: center;
+  background-color: cyan;
+}
+
+.card-content {
+  padding: auto;
+
+  width: 100%;
+
+  text-align: center;
+
+  background-color: whitesmoke;
+
+  transition: 400ms all;
+}
+
+.cards:hover{
+  background-color: purple;
+}
