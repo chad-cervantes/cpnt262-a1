@@ -10,7 +10,7 @@
     <!--Style.css-->
     <link rel="stylesheet" href="style.css">
     <!--JavaScript-->
-    <script src="client.js" type="module" defer></script>
+    <script src="client.js" type="module"></script>
   <title>Knife Gallery</title>
 </head>
 <body>
@@ -18,7 +18,10 @@
     <div id="company-logo">
       <span>Sutāai Knife Co.</span>
     </div> 
-    
+    <div class="day-night-toggle">
+      <input type="checkbox" id="darkmode-toggle"/>
+      <label for="darkmode-toggle"></label>
+    </div>
     <nav id="grid-container" >
       <ul>
         <li><a href="#">Home</a></li>
@@ -35,7 +38,11 @@
    </header> 
   <main>
     <!-- <h1>Japanese Knives</h1> -->
-      <div class="card-container">
+   <section>
+    <h2>Knife Cards</h2>
+      <div id="knife-list" class="cards"></div>
+   </section> 
+      <!-- <div class="card-container">
         <div class="cards">
           <div class="card-content">
             <h2>knife name</h2>
@@ -43,7 +50,7 @@
             <a class="cta" href="#"><u>Check out brands & prices</u></a>
           </div>
         </div>
-      </div>
+      </div> -->
     <!-- <section class="lg:grid grid-cols-3 grid-rows-4 p-4 gap-4 text-center" > -->
       <!-- <a href="#" class="card-color">
         <article>
