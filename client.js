@@ -34,3 +34,17 @@ const knifeTitleArray  = ["Bunka", "Gyuto", "Santoku", "Petty", "Usaba", "Nakiri
 
 const knifeDescriptionArray = ["Like a Santoku knife, but a little longer", "Main chef's kitchen knife", "Knife for vegetables, meats, & fish", "Paring knife", "Like a nakiri knife, but smaller", "Thin rectangular vegetable knife", "Heavy knife for bigger tasks", "Cuts thin slices of fish & large cuts of meat", "Designed to slice boneless meat", "Designed to slice fish, vegetables, & fruit", "Prosciutto knife"]
 
+//Make querySelectors
+let cards = document.querySelector('.card-container');
+ 
+for (let i = 0; i < knifeTitleArray.length; i++) {
+    
+  let fetch = document.querySelector('.card-container').innerHTML;
+    cards.innerHTML = `<div class="cards">
+    <div class="card-content">
+      <h2>${knifeTitleArray[i]}</h2>
+      <p>${knifeDescriptionArray[i]}</p>
+      <a class="cta" href="#"><u>Check out brands & prices</u></a>
+    </div>
+  </div>` + fetch; 
+}
