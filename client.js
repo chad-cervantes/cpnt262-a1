@@ -39,7 +39,7 @@ let cards = document.querySelector('.card-container');
  
 for (let i = 0; i < knifeTitleArray.length; i++) {
     
-  let fetch = document.querySelector('.card-container').innerHTML;
+  let fetch = fetch(document.querySelector('.card-container').innerHTML);
     cards.innerHTML = `<div class="cards">
     <div class="card-content">
       <h2>${knifeTitleArray[i]}</h2>
