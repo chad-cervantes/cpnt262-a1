@@ -27,9 +27,9 @@ document.addEventListener("click", (e) => {
   }
 });
 
-//Render a card/image gallery
+//Render a card gallery
 
-//Make objects for image/card gallery
+//Make objects for card gallery
 const bunkaKnife  = 
 {
  name: "Bunka", 
@@ -57,9 +57,38 @@ getImage() {
   }
 };
 
+//Add functions
+function putUpImage(infoText, altText) {
+  return `<img src="${infoText}" alt="${altText}"`;
+} 
+function learnMore(details = "learn more") {
+  return details
+}
+
 const knives = [bunkaKnife, gyutoKnife, santokuKnife]
 
-//Add functions
+//Make the loop
+for (knife of knives) {
+  if (knife.name === "Bunka") {
+    knife.details = details("learn more");
+  } else if (knife.name === "Gyuto") {
+      knife.details = details("learn more");
+  } else if (knife.name === "Santoku") {
+    knife.details === details("learn more");
+  }
+};
+
+const knifeCards = knives.map((knife)) => {
+  return `<article>
+  <h2>${knife.name}: ${knife.details}</h2>
+  ${knife.putUpImage ? knife.putUpImage(): "No Image"}
+  <h3>${knife.description}</h3>
+  <p>${knife.price}</p>
+  </article>`
+};
+
+//render the knives
+document.querySelector("#knife-list").innerHTML = knifeCards.map((knife) => knife).join("");
 
 
 // ["Bunka", "Gyuto", "Santoku", "Petty", "Usaba", "Nakiri", "Deba", "Yanagiba", "Garasuki", "Sujihiki", "Kiritsuke", "Burja"] 
