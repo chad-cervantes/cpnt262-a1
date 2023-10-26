@@ -114,7 +114,9 @@ li:hover {
 } */
 
 .cards {
-  margin: auto;
+  padding: auto;
+  gap: 20px;
+  margin: 25px auto;
   align-items: center;
 
   width: 20vw;
