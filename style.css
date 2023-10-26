@@ -129,6 +129,12 @@ li:hover {
   transition: 600ms all;
 }
 
+img {
+  width: 307px;
+  height: 100px;
+  object-fit: cover;
+}
+
 /* .card-content {
   padding: 10px 5px;
 
