@@ -114,24 +114,17 @@ li:hover {
 } */
 
 .cards {
-  display: flex;
-  justify-content: space-between;
-
-  margin: 5px;
+  margin: auto;
   align-items: center;
 
-  
   width: 20vw;
   height: 40vh;
 
-  border: 7px solid white;
+  border: 15px solid white;
+  border-radius: 10%;
 
-  box-shadow: 0 0 30px gray;
-  transition: 400ms all;
-
-  background-size: cover;
-  background-position: center;
-  /* background-color: cyan; */
+  box-shadow: 0 0 40px black;
+  transition: 600ms all;
 }
 
 /* .card-content {
