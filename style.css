@@ -181,7 +181,7 @@ body {
 }
 
 .slider {
-  background-color: lightgray;
+  background-color: white;
 
   left: 0;
   right: 0;
@@ -196,7 +196,7 @@ body {
 
 .slider:before {
   content: "";
-  background-color: black;
+  background-color: orange;
 
   bottom: 1px;
   
@@ -210,8 +210,9 @@ body {
   transition: 0.5s;
 }
 
+
 input:checked + .slider {
-  background-color: orange;
+  background-color: black;
 }
 
 input:checked + .slider:before {
