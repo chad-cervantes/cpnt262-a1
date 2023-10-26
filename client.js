@@ -94,10 +94,10 @@ const knifeCards = knives.map((knife) => {
 
   return `<article>
   <img src="${knife.img.src}"/>
-  <h2>${knife.name}: ${knife.details}</h2>
-  ${knife.putUpImage ? knife.putUpImage(): "No Image"}
+  <h2>${knife.name}</h2>
   <h3>${knife.description}</h3>
   <p>${knife.price}</p>
+  <p>${knife.details}</p>
   </article>`
 });
 
