@@ -3,7 +3,6 @@
 const menuIcon = document.querySelector("#menu-icon-container");
 const gridContainer = document.querySelector("#grid-container");
 const siteHeader = document.querySelector("#site-header");
-// const mobileMediaQuery = window.watchMedia("(max-width:550)");
 
 //Functions
 
@@ -18,8 +17,6 @@ menuIcon.addEventListener("click", () => {
   gridContainer.classList.toggle("menu-row");
 });
 
-//First toggle transition check
-// applyToggleTransition(mobileMediaQuery);
 
 //click of #header to close
 document.addEventListener("click", (e) => {
