@@ -1,3 +1,4 @@
+//MENU HAMBURGER TOGGLE
 //DOM elements for primary nav toggle
 const menuIcon = document.querySelector("#menu-icon-container");
 const gridContainer = document.querySelector("#grid-container");
@@ -27,7 +28,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-//Render a card gallery
+//RENDER A CARD GALLERY
 
 //Make objects for card gallery
 const bunkaKnife  = 
@@ -120,21 +121,3 @@ function switchTheme(e) {
 toggleSwitch.addEventListener('change', switchTheme, false);
 
 
-// ["Bunka", "Gyuto", "Santoku", "Petty", "Usaba", "Nakiri", "Deba", "Yanagiba", "Garasuki", "Sujihiki", "Kiritsuke", "Burja"] 
-
-// const knifeDescriptionArray = ["Like a Santoku knife, but a little longer", "Main chef's kitchen knife", "Knife for vegetables, meats, & fish", "Paring knife", "Like a nakiri knife, but smaller", "Thin rectangular vegetable knife", "Heavy knife for bigger tasks", "Cuts thin slices of fish & large cuts of meat", "Designed to slice boneless meat", "Designed to slice fish, vegetables, & fruit", "Prosciutto knife"]
-
-//Make function & querySelectors
-// let cards = document.querySelector('.card-container');
- 
-// for (let i = 0; i < knifeTitleArray.length; i++) {
-    
-//   let fetch = fetch(document.querySelector('.card-container').innerHTML);
-//     cards.innerHTML = `<div class="cards">
-//     <div class="card-content">
-//       <h2>${knifeTitleArray[i]}</h2>
-//       <p>${knifeDescriptionArray[i]}</p>
-//       <a class="cta" href="#"><u>Check out brands & prices</u></a>
-//     </div>
-//   </div>` + fetch; 
-// }
