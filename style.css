@@ -114,25 +114,37 @@ li:hover {
 } */
 
 .cards {
+  display: flex;
+  justify-content: space-between;
+
   padding: auto;
-  gap: 20px;
-  margin: 25px auto;
+  gap: 101px;
+  margin: auto;
   align-items: center;
 
   width: 20vw;
-  height: 40vh;
+  height: 50vh;
 
   border: 15px solid white;
   border-radius: 10%;
 
   box-shadow: 0 0 40px black;
   transition: 600ms all;
+
+  text-align: center;
+}
+
+.knife-cards {
+  display: flex;
+  justify-content: center;
 }
 
 img {
-  width: 307px;
-  height: 100px;
-  object-fit: cover;
+  width: 306px;
+  height: 150px;
+  object-fit: fill;
+
+  border-radius: 10%;
 }
 
 /* .card-content {
