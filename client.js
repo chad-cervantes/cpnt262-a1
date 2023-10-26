@@ -30,10 +30,6 @@
 
 //RENDER A CARD GALLERY
 
-const testKnife = {
-  name: "sharp knife"
-}
-
 //Make objects for card gallery
 const bunkaKnife  = 
 {
@@ -41,7 +37,7 @@ const bunkaKnife  =
  description: "Like a Santoku knife, but a little longer",
  price: "$100",
  img: {src:"assets/images/bunka-knife.png", alt:`${this.name} knife`},
- details: "learn more",
+ details: "learn more"
 };
 
 const gyutoKnife = 
@@ -49,7 +45,7 @@ const gyutoKnife =
 description: "Main chef's kitchen knife", 
 price: "$100",
 img: {src:"assets/images/gyuto-knife.png", alt:`${this.name} knife`},
-details: "learn more",
+details: "learn more"
 };
 
 const santokuKnife = 
@@ -57,15 +53,9 @@ const santokuKnife =
 description: "Knife for vegetables, meats, & fish", 
 price: "$100",
 img: {src:"assets/images/santoku-knife.png", alt:`${this.name} knife`},
-details: "learn more",
+details: "learn more"
 };
 
-// function abc(knife) {
-//   let a = document.getElementById("knife-list");
-//   a.innerHTML = knife.details
-// }
-
-// abc(bunkaKnife);
 
 //Add functions
 function putUpImage(infoText, altText) {
@@ -90,8 +80,7 @@ const knives = [bunkaKnife, gyutoKnife, santokuKnife]
 // };
 
 const knifeCards = knives.map((knife) => {
-  console.log(knife);
-
+  
   return `<article>
   <img src="${knife.img.src}"/>
   <h2>${knife.name}</h2>
