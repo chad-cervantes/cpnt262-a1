@@ -147,13 +147,12 @@ li:hover {
 :root {
   --p-color: gray;
   --bg-color: white;
-  --h1-color: black;
+  
 }
 
 [data-theme=dark] {
   --p-color: white;
   --bg-color: black;
-  --h1-color: gray;
 }
 
 body {
@@ -172,6 +171,9 @@ body {
   height: 30px;
   position: relative;
   width: 90px;
+
+  border: solid;
+  border-radius: 30px;
 }
 
 .theme-switch input {
