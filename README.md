@@ -27,3 +27,9 @@ Gallery CSS Images for cards
 - [Sujihiki knife image](https://staysharpmtl.com/en/products/hado-ginsan-sujihiki-270-mm-kijiro-laque)
 - [Kiritsuke knife image](https://staysharpmtl.com/en/products/yoshikane-skd-nashiji-kiritsuke-gyuto-240mm-tagayasan)
 - [Burja knife image](https://osterrob.si/products/burja-noz-za-prsut-300-mm)
+
+Classmates & teachers
+- Ashkie 
+- Brendan
+- Sterling
+- Ashlyn (instructor)
