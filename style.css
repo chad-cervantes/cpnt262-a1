@@ -113,10 +113,10 @@ h2 {
 /* 3-CARD GALLERY */
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
-  padding: auto;
-  gap: 101px;
+  padding: 45px;
+  gap: 200px;
   margin: auto;
   align-items: center;
 
@@ -134,7 +134,7 @@ h2 {
 
 .knife-cards {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 img {
