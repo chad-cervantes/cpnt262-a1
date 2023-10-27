@@ -93,35 +93,36 @@ document.querySelector("#knife-list").innerHTML = knifeCards;
 
 //IMAGE GALLERY 
 
+//Make object array for image gallery
+const knifeImages = [
+  {src: "assets/images/bunka-knife.png", alt: "Bunka knife"},
+  {src: "assets/images/burja-knife.PNG", alt: "Burja knife"},
+  {src: "assets/images/deba-knife.png", alt: "Deba knife"},
+  {src: "assets/images/garasuki-knife.png", alt: "Garasuki knife"},
+  {src: "assets/images/gyuto-knife.png", alt: "Gyuto knife"},
+  {src: "assets/images/kiritsuke-knife.png", alt: "Kritsuke knife"},
+  {src: "assets/images/nakiri-knife.png", alt: "Nakiri knife"},
+  {src: "assets/images/petty-knife.png", alt: "Petty knife"},
+  {src: "assets/images/santoku-knife.png", alt: "Santoku knife"},
+  {src: "assets/images/sujihiki-knife.PNG", alt: "Sujihiki knife"},
+  {src: "assets/images/usaba-knife.png", alt: "Usaba knife"},
+  {src: "assets/images/yanagiba-knife.png",alt: "Yanagiba knife"},
+];
 
-// const knifeImages = [
-//   {
-//   bunka: "assets/images/bunka-knife.png",
+//Put original object array of images using map method
+const japaneseKnives = knifeImages.map((image) => {
+  return `img src="${image.src}" alt="${image.alt}" />`;
+});
 
-//   src: "assets/images/burja-knife.PNG",
+const updatedJapaneseKnives = knifeImages.map((image) => {
+  return `img src="${image.src}" alt="${image.alt}" />`;
+});
 
-//   src: "assets/images/deba-knife.png",
+//console log of images
+console.log(updatedJapaneseKnives);
 
-//   src: "assets/images/garasuki-knife.png",
-
-//   src: "assets/images/gyuto-knife.png",
-
-//   src: "assets/images/kiritsuke-knife.png",
-
-//   src: "assets/images/nakiri-knife.png",
-
-//   src: "assets/images/petty-knife.png",
-
-//   src: "assets/images/santoku-knife.png",
-
-//   src: "assets/images/sujihiki-knife.PNG",
-
-//   src: "assets/images/usaba-knife.png",
-
-//   src: "assets/images/yanagiba-knife.png",
-// }
-// ]
-
+//render to html
+document.querySelector("#knife-image").innerHTML = updatedJapaneseKnives;
 
 
 // DAY/NIGHT TOGGLE
