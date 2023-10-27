@@ -106,16 +106,16 @@ const knifeImages = [
   {src: "assets/images/santoku-knife.png", alt: "Santoku knife"},
   {src: "assets/images/sujihiki-knife.PNG", alt: "Sujihiki knife"},
   {src: "assets/images/usaba-knife.png", alt: "Usaba knife"},
-  {src: "assets/images/yanagiba-knife.png",alt: "Yanagiba knife"},
+  {src: "assets/images/yanagiba-knife..png",alt: "Yanagiba knife"},
 ];
 
 //Put original object array of images using map method
 const japaneseKnives = knifeImages.map((image) => {
-  return `img src="${image.src}" alt="${image.alt}" />`;
+  return `img src="${image.src}" alt="${image.alt}">`;
 });
 
 const updatedJapaneseKnives = knifeImages.map((image) => {
-  return `img src="${image.src}" alt="${image.alt}" />`;
+  return `img src="${image.src}" alt="${image.alt}">`;
 });
 
 //console log of images
@@ -123,7 +123,6 @@ console.log(updatedJapaneseKnives);
 
 //render to html
 document.querySelector("#knife-image").innerHTML = updatedJapaneseKnives;
-
 
 // DAY/NIGHT TOGGLE
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
