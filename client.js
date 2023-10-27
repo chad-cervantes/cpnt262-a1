@@ -89,7 +89,7 @@ const knifeCards = knives.map((knife) => {
 
 
 //render the knives
-document.querySelector("#knife-list").innerHTML = knifeCards;
+document.querySelector("#knife-list").innerHTML = knifeCards.join(' ');
 
 //IMAGE GALLERY 
 
@@ -122,7 +122,7 @@ const updatedJapaneseKnives = knifeImages.map((image) => {
 console.log(updatedJapaneseKnives);
 
 //render to html
-document.querySelector("#knife-image").innerHTML = updatedJapaneseKnives;
+document.querySelector("#knife-image").innerHTML = updatedJapaneseKnives.join(' ');
 
 // DAY/NIGHT TOGGLE
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
