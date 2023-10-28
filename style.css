@@ -158,22 +158,25 @@ img {
 }
 
 /* day/night toggle */
-:root {
-  --p-color: gray;
-  --bg-color: white;
-  
-}
-
-[data-theme=dark] {
-  --p-color: white;
-  --bg-color: black;
-}
 
 body {
   padding: 0;
   margin: 0;
-  background-color:whitesmoke);
+  transition: 0.7s;
   width: 100%;
+}
+
+.dark-theme {
+  background-color: darkcyan;
+  color: white; 
+}
+
+.dark-theme #checkbox {
+  background-color: whitesmoke;
+}
+
+.dark-theme #checkbox:after {
+  background-color: transparent;
 }
 
 .theme-switch-container {
