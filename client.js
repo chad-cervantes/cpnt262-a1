@@ -125,32 +125,7 @@ console.log(updatedJapaneseKnives);
 document.querySelector("#knife-image").innerHTML = updatedJapaneseKnives.join(' ');
 
 // DAY/NIGHT TOGGLE
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-const currentTheme = localStorage.getItem('theme');
-
-//if-statement(s)
-
-if(currentTheme) {
-  document.documentElement.setAttribute('data-theme', currentTheme);
-
-  if(currentTheme === 'dark') {
-    toggleSwitch.checked = true;
-  }
-}
-
-//function(s)
-function switchTheme(e) {
-  if(e.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  }
-  else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
-  }
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
-
-
+//rendered day/night toggle
+document.getElementById("checkbox").addEventListener("click", function() {
+  document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
+});
