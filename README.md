@@ -12,7 +12,10 @@
 
 - [FontAwesome](https://fontawesome.com/)
 
-- [Dark/light mode toggle video](https://www.youtube.com/watch?v=t-AQf8yzEeA)
+Dark/Light mode toggle
+- [Datk/Light mode Youtube tutorial](https://www.youtube.com/watch?v=t-AQf8yzEeA)
+- [Day & Night mode toggle](https://foolishdeveloper.com/day-and-night-mode-toggle-using-javascript/)
+  - This site helped me with the javascript code portion
 
 Gallery CSS Images for cards
 - [Gyuto knife image](https://www.chefslocker.co.uk/store/p87/WASakai.html)
