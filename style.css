@@ -155,7 +155,37 @@ img {
   padding: 1rem;
   
   text-align: center;
+
+  /* white-space: nowrap; */
 }
+
+/* Carousel of image gallery */
+/* .btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: brown;
+  font-size: 18px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-previous-button {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next-button {
+  top: 45%;
+  right: 2%;
+} */
 
 /* day/night toggle */
 
