@@ -37,6 +37,12 @@ li:hover {
   height: 35px;
 }
 
+/* style News & Events section */
+.news-events{ 
+  text-align: center;
+  padding: 1rem;
+}
+
 /*style footer*/
 footer {
   border-top: solid black;
