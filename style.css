@@ -69,6 +69,8 @@ footer p {
 
   padding: auto; 
   border-bottom: solid black;
+
+  background-color: darkgoldenrod;
 }
 
 #grid-container {  
