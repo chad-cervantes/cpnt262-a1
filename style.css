@@ -38,15 +38,30 @@ li:hover {
 }
 
 /*style footer*/
-/* footer {
+footer {
+  border-top: solid black;
+  background-color: darkgoldenrod;
   display: flex;
-  justify-content: space-around;
-  padding: 3rem;
+  justify-content: space-between;
+  padding: 1rem;
+} 
+
+footer p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 2rem;
+}
+
+.primary-nav ul {
+  display: flex;
+  justify-content: center;
 }
 
 .social-nav-icons{
   position: center;
-} */
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
 
 /*styling nav toggle*/
 #site-header {
