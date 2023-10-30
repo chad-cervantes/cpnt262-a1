@@ -237,7 +237,7 @@ body {
 
 .theme-switch {
   display: inline-block;
-  height: 30px;
+  height: 34px;
   position: relative;
   width: 90px;
 
@@ -267,9 +267,9 @@ body {
   content: "";
   background-color: orange;
 
-  bottom: 1px;
+  bottom: auto;
   
-  left: 1px;
+  left: auto;
  
   height: 28px;
   width: 30px;
@@ -285,7 +285,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(60px);
+  transform: translateX(55px);
 }
 
 .slider.round {
