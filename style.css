@@ -301,3 +301,26 @@ input:checked + .slider:before {
   display: block;
   margin: auto;
 }
+
+/*Contact Us section*/
+.contact-us {
+  text-align: center;
+  padding: 1rem;
+}
+
+label {
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+input {
+ margin: auto;
+ padding: auto;
+ gap: auto;
+
+ border-radius: 5px;
+ margin-bottom: 1rem;
+
+ line-height: 1.5;
+}
+
