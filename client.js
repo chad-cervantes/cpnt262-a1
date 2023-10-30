@@ -25,9 +25,9 @@ document.addEventListener("click", (e) => {
   }
 });
 
-//RENDER A CARD GALLERY
+//RENDER A 3-CARD GALLERY
 
-//Make objects for card gallery
+//step 1: Make objects for card gallery
 const bunkaKnife  = 
 {
  name: "Bunka", 
@@ -62,21 +62,40 @@ function learnMore(details) {
   return details
 }
 
-const knives = [bunkaKnife, gyutoKnife, santokuKnife]
+//Make new consts for step 2
+const knives = [bunkaKnife]
+const knives1 = [gyutoKnife]
+const knives2 = [santokuKnife]
 
 
-//Make the loop
-// for (knife of knives) {
-//   if (knife.name === "Bunka") {
-//     knife.details = details("learn more");
-//   } else if (knife.name === "Gyuto") {
-//       knife.details = details("learn more");
-//   } else if (knife.name === "Santoku") {
-//     knife.details === details("learn more");
-//   }
-// };
-
+//Step 2: map the knife object arrays
+//Bunka knife object
 const knifeCards = knives.map((knife) => {
+
+  return `<article>
+  <img src="${knife.img.src}"/>
+  <h2>${knife.name}</h2>
+  <h3>${knife.description}</h3>
+  <p>${knife.price}</p>
+  <p>${knife.details}</p>
+  </article>`
+});
+
+//Gyuto knife object
+const knifeCards1 = knives1.map((knife) => {
+  
+  
+  return `<article>
+  <img src="${knife.img.src}"/>
+  <h2>${knife.name}</h2>
+  <h3>${knife.description}</h3>
+  <p>${knife.price}</p>
+  <p>${knife.details}</p>
+  </article>`
+});
+
+//Santoku knife object
+const knifeCards2 = knives2.map((knife) => {
   
   return `<article>
   <img src="${knife.img.src}"/>
@@ -88,8 +107,13 @@ const knifeCards = knives.map((knife) => {
 });
 
 
-//render the knives
+//Step 3: render the knives
+//Bunka knife object
 document.querySelector("#knife-list").innerHTML = knifeCards.join(' ');
+//Gyuto knife object
+document.querySelector("#knife-list1").innerHTML = knifeCards1.join(' ');
+//Santoku knife object
+document.querySelector("#knife-list2").innerHTML = knifeCards2.join(' ');
 
 //IMAGE GALLERY 
 
