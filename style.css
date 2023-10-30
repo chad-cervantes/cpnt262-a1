@@ -295,3 +295,9 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/*text-area*/
+#favorite-knife {
+  display: block;
+  margin: auto;
+}
