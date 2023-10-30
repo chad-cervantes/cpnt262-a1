@@ -117,7 +117,7 @@ document.querySelector("#knife-list2").innerHTML = knifeCards2.join(' ');
 
 //IMAGE GALLERY 
 
-//Make object array for image gallery
+//Step 1: Make object array for image gallery
 const knifeImages = [
   {src: "assets/images/bunka-knife.png", alt: "Bunka knife"},
   {src: "assets/images/burja-knife.PNG", alt: "Burja knife"},
@@ -133,7 +133,7 @@ const knifeImages = [
   {src: "assets/images/yanagiba-knife..png",alt: "Yanagiba knife"},
 ];
 
-//Put original object array of images using map method
+//Step 2: Put original object array of images using map method
 const japaneseKnives = knifeImages.map((image) => {
   return `<img src="${image.src}" alt="${image.alt}">`;
 });
@@ -145,11 +145,32 @@ const updatedJapaneseKnives = knifeImages.map((image) => {
 //console log of images
 console.log(updatedJapaneseKnives);
 
-//render to html
+//Step 3: render to html
 document.querySelector("#knife-image").innerHTML = updatedJapaneseKnives.join(' ');
 
+
 // DAY/NIGHT TOGGLE
-//rendered day/night toggle
-document.getElementById("checkbox").addEventListener("click", function() {
-  document.getElementsByTagName('body')[0].classList.toggle("dark-theme");
+
+//Step 1: Make consts for the toggle and the page itself
+const toggle = document.getElementById("checkbox");
+const page = document.getElementsByTagName("body")[0];
+
+//Step 2: Make EventListener for toggle
+toggle.addEventListener("click", function() {
+  //for the page to turn dark
+  page.classList.toggle("dark-theme");
+  //save this info into local storage using setItem
+localStorage.setItem("checkBoxSlide", checkbox.checked);
 });
+
+//Step 3: Retrieve info from setItem by using getItem 
+const checkBoxTransition = localStorage.getItem("checkBoxSlide");
+  //if-else statement
+  if (checkBoxTransition === "true") {
+    checkbox.checked === true;
+    page.classList.add("dark-theme");
+  } else {
+    checkbox.checked = false;
+    page.classList.remove("dark-theme");
+  }
+
