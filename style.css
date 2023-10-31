@@ -281,8 +281,8 @@ body {
   
   left: auto;
  
-  height: 28px;
-  width: 30px;
+  height: 34px;
+  width: 34px;
   
   position: absolute;
 
@@ -295,7 +295,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(55px);
+  transform: translateX(57px);
 }
 
 .slider.round {
