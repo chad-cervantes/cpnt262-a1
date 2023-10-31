@@ -135,15 +135,16 @@ h2 {
 /* 3-CARD GALLERY */
 .cards {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
 
-  padding: 45px;
-  gap: 200px;
+  padding: 20px;
+  gap: 100px;
+
   margin: auto;
   align-items: center;
 
-  width: 20vw;
-  height: 50vh;
+  width: 55vw;
+  height: 80vh;
 
   border: 15px solid white;
   border-radius: 10%;
@@ -154,21 +155,35 @@ h2 {
   text-align: center;
 }
 
-.knife-cards {
-  display: flex;
-  justify-content: flex-end;
-}
-
 img {
-  width: 306px;
-  height: 150px;
+  width: 200px;
+  height: 105px;
   object-fit: cover;
-
-  /* border-radius: 10%; */
 }
 
 .cards:hover{
   transform: scale(1.2);
+}
+
+@media (width > 50rem) {
+  .cards {
+    display: flex;
+    justify-content: flex-start;
+
+    width: 20vw;
+    height: 50vh;
+  }
+
+  .knife-cards {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  img {
+    width: 306px;
+    height: 150px;
+    object-fit: cover;
+  }
 }
 
 /* 9-IMAGE GALLERY */
@@ -181,35 +196,7 @@ img {
   /* white-space: nowrap; */
 }
 
-/* Carousel of image gallery */
-/* .btn {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  border: none;
-  border-radius: 50%;
-  z-index: 10px;
-  cursor: pointer;
-  background-color: brown;
-  font-size: 18px;
-}
-
-.btn:active {
-  transform: scale(1.1);
-}
-
-.btn-previous-button {
-  top: 45%;
-  left: 2%;
-}
-
-.btn-next-button {
-  top: 45%;
-  right: 2%;
-} */
-
-/* day/night toggle */
+/* DAY/NIGHT TOGGLE */
 
 body {
   padding: 0;
@@ -240,6 +227,8 @@ body {
   height: 34px;
   position: relative;
   width: 90px;
+
+  margin: auto;
 
   border: solid;
   border-radius: 30px;
