@@ -84,7 +84,6 @@ const knifeCards = knives.map((knife) => {
 //Gyuto knife object
 const knifeCards1 = knives1.map((knife) => {
   
-  
   return `<article>
   <img src="${knife.img.src}"/>
   <h2>${knife.name}</h2>
