@@ -17,6 +17,9 @@ Dark/Light mode toggle
 - [Day & Night mode toggle](https://foolishdeveloper.com/day-and-night-mode-toggle-using-javascript/)
   - This site helped me with the javascript code portion
 
+Contact Us section
+- [HTML Contact Form](https://www.majesticform.com/form-guides/html-email-form)
+
 Gallery CSS Images for cards
 - [Gyuto knife image](https://www.chefslocker.co.uk/store/p87/WASakai.html)
 - [Santoku knife image](https://www.justonecookbook.com/your-guide-to-japanese-knives/)
