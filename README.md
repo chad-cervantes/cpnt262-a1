@@ -8,12 +8,11 @@
 
 ### Attributions
 
-- [Tailwind CSS](https://tailwindcss.com/)
-
 - [FontAwesome](https://fontawesome.com/)
 
 Dark/Light mode toggle
-- [Datk/Light mode Youtube tutorial](https://www.youtube.com/watch?v=t-AQf8yzEeA)
+- [Dark/Light mode Youtube tutorial](https://www.youtube.com/watch?v=t-AQf8yzEeA)
+  - This tutorial helped me make the actual day/night toggle
 - [Day & Night mode toggle](https://foolishdeveloper.com/day-and-night-mode-toggle-using-javascript/)
   - This site helped me with the javascript code portion
 
@@ -40,3 +39,5 @@ Classmates & teachers
 - Sterling
 - Ashlyn (instructor)
 - Tony (instructor)
+
+### Code Journal 
