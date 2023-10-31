@@ -21,7 +21,7 @@ Dark/Light mode toggle
 Contact Us section
 - [HTML Contact Form](https://www.majesticform.com/form-guides/html-email-form)
 
-Gallery CSS Images for cards
+Gallery CSS Images for Image Gallery & for some of the 3 cards
 - [Gyuto knife image](https://www.chefslocker.co.uk/store/p87/WASakai.html)
 - [Santoku knife image](https://www.justonecookbook.com/your-guide-to-japanese-knives/)
 - [Nakiri knife image](https://www.koiknives.com/blogs/japanese-knives/santoku-vs-nakiri-knives-which-one-is-right-for-you)
