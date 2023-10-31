@@ -38,21 +38,22 @@ const bunkaKnife  =
 };
 
 const gyutoKnife = 
-{name: "Gyuto",
-description: "Main chef's kitchen knife", 
-price: "$100",
-img: {src:"assets/images/gyuto-knife.png", alt:`${this.name} knife`},
-details: "learn more"
+{
+  name: "Gyuto",
+  description: "Main chef's kitchen knife", 
+  price: "$100",
+  img: {src:"assets/images/gyuto-knife.png", alt:`${this.name} knife`},
+  details: "learn more"
 };
 
 const santokuKnife = 
-{name: "Santoku",
-description: "Knife for vegetables, meats, & fish", 
-price: "$100",
-img: {src:"assets/images/santoku-knife.png", alt:`${this.name} knife`},
-details: "learn more"
+{
+  name: "Santoku",
+  description: "Knife for vegetables, meats, & fish", 
+  price: "$100",
+  img: {src:"assets/images/santoku-knife.png", alt:`${this.name} knife`},
+  details: "learn more"
 };
-
 
 //Add functions
 function putUpImage(infoText, altText) {
@@ -66,7 +67,6 @@ function learnMore(details) {
 const knives = [bunkaKnife]
 const knives1 = [gyutoKnife]
 const knives2 = [santokuKnife]
-
 
 //Step 2: map the knife object arrays
 //Bunka knife object
